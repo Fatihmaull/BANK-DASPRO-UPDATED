@@ -38,7 +38,7 @@ public class AplikasiPerbankan {
                 DataBase.tambahAkunAdmin(admin);
 
                 System.out.println("Akun Admin berhasil dibuat dengan ID: " + admin.getIdAdmin());
-                System.out.print("Apakah Anda ingin login sebagai Nasabah? (ya/tidak): ");
+                System.out.print("Apakah Anda ingin login sebagai ADMIN? (ya/tidak): ");
                 String inginLogin = scanner.nextLine().toLowerCase();
 
                 if (inginLogin.equals("ya")) {
@@ -141,7 +141,7 @@ public class AplikasiPerbankan {
                 }
             } else if(jenisUser.equals("3")){
                 System.out.println("Terimakasih, semoga harimu diberkahi.");
-                System.exit(0);
+                System.exit(0); 
 
             } else {    System.out.println("Jenis pengguna tidak valid.");
             }
